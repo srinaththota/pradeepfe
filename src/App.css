@@ -1,12 +1,25 @@
 .App {
   text-align: center;
+  background-color: #656668;
+  min-height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.components{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
 }
-
+.subcomponents{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.childcomponents{
+  display: flex;
+  flex-direction: column;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
