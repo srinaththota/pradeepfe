@@ -4,7 +4,7 @@ const initialState={
 }
 
 const LoginReducer = (state=initialState,action)=>{
-
+console.log(action)
     if(action.type===actionTypes.LOGIN){
         return {
             ...state,
@@ -12,6 +12,13 @@ const LoginReducer = (state=initialState,action)=>{
         }
     }
 
+    if(action.type===actionTypes.ERROR){
+        console.log(action)
+        return {
+            ...state,
+            token:action.payload
+        }
+    }
     return state;
 }
 
