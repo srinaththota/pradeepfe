@@ -5,8 +5,7 @@ export const LoginAction=(username,password)=>{
         return async dispatch=>{
     
             try{
-             const responseData=axios.post("http://localhost:8080" + "/login",{
-                    
+             const responseData=axios.post("http://localhost:8080/login",{
                         username:username,
                         password:password
                     }
